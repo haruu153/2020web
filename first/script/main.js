@@ -1,4 +1,4 @@
- <script>
+
   let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
   
@@ -9,6 +9,6 @@ let myHeading = document.querySelector('h1');
 }
   myButton.onclick = function() {
   setUserName();
-}
+}  
   
-    </script>
+
