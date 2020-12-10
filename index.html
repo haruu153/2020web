@@ -20,18 +20,29 @@
 
     <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
 <script>
+  
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 function checkGuess() {
   alert('ここはプレースホルダです');
 }
 checkGuess();
-
-<script>
-document.querySelector('html').onclick = function() {
-    alert('痛っ! つつくのはやめて!');
-} 
   
-  </script>
+  
+<button>ユーザを変更</button>
+  <script>
+  let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+  
+ function setUserName() { 
+   let myName = prompt('あなたの名前を入力してください。');
+  localStorage.setItem('name', myName);
+  myHeading.textContent = 'Mozilla はすばらしいよ、' + myName;
+}
+  myButton.onclick = function() {
+  setUserName();
+}
+  
+    </script>
   
   
   </body>
